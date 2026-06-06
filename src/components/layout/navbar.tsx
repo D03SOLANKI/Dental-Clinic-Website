@@ -28,6 +28,18 @@ export default function Navbar() {
     setMobileMenuOpen(false);
   }, [pathname, setMobileMenuOpen]);
 
+  // Lock body scroll when mobile menu is open to prevent horizontal shifting
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMobileMenuOpen]);
+
   // Handle keyboard accessibility (Escape key to close menu)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
