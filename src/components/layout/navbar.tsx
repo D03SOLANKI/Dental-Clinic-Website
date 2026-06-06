@@ -148,12 +148,10 @@ export default function Navbar() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "tween", duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed top-0 right-0 bottom-0 w-full max-w-full sm:max-w-[448px] bg-surface p-xl flex flex-col justify-between shadow-card-lg lg:hidden"
+            className="fixed top-0 right-0 bottom-0 w-full max-w-full sm:max-w-[448px] h-dvh bg-surface p-xl flex flex-col justify-between shadow-card-lg lg:hidden"
             style={{
               zIndex: 99999,
               position: "fixed",
-              height: "100vh",
-              height: "100dvh",
               boxSizing: "border-box"
             }}
           >
