@@ -168,7 +168,8 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.3, ease: "easeOut" }}
-              className="fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-white p-xl shadow-card-lg flex flex-col justify-between lg:hidden"
+              style={{ backgroundColor: "#ffffff" }}
+              className="fixed inset-y-0 right-0 z-50 w-full max-w-sm p-xl shadow-card-lg flex flex-col justify-between lg:hidden"
             >
               <div>
                 <div className="flex items-center justify-between mb-xl">
