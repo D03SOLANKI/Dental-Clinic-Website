@@ -1,0 +1,17 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:3000",
+  "executionArgs": {
+    "projectName": "Dental Website",
+    "projectPath": "e:/Dental Website",
+    "testIds": [],
+    "additionalInstruction": "",
+    "serverMode": "development",
+    "envs": {
+      "API_KEY": "sk-user-4qTGb0CFO3T5kyGSktRRct4EaEU6Hu4VrF0kY5sXJhFYfi1wuVNtodbODlneRi0Dr5UTeBnOecgNCWFKBoUGBRmKv-7Df7sIsPogwBcl3NQXtAN8GOm9Ay5GormI8wqw_5M"
+    }
+  },
+  "serverPort": 55637
+}

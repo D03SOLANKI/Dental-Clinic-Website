@@ -1,26 +1,86 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* Brand Palette: Refined Medical Luxury */
+  --color-primary-50: #f0f9ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-500: #0ea5e9;  /* Signature blue */
+  --color-primary-600: #0284c7;
+  --color-primary-700: #0369a1;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-surface: #ffffff;
+  --color-surface-subtle: #f8fafc;
+  --color-surface-muted: #f1f5f9;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-accent-mint: #10b981;   /* Active state/success */
+  --color-accent-coral: #f43f5e;  /* Emergency/alert */
+
+  --color-text-primary: #0f172a;  /* Deep Slate */
+  --color-text-secondary: #475569;
+  --color-text-muted: #94a3b8;
+  --color-text-inverse: #ffffff;
+
+  /* Typography Pairing */
+  --font-display: var(--font-display), sans-serif;
+  --font-body: var(--font-body), sans-serif;
+
+  /* Shadows: 3-tier Soft Depth System */
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
+  --shadow-card-md: 0 4px 6px rgba(0,0,0,0.07), 0 10px 40px rgba(0,0,0,0.06);
+  --shadow-card-lg: 0 10px 15px rgba(0,0,0,0.08), 0 20px 60px rgba(0,0,0,0.08);
+
+  /* Spacing Scale - Tailwind v4 maps --spacing-* CSS variables to spacing utility classes automatically */
+  --spacing-xs: 0.25rem;  /* 4px -> p-xs, m-xs */
+  --spacing-sm: 0.5rem;   /* 8px -> p-sm, m-sm */
+  --spacing-md: 1rem;     /* 16px -> p-md, m-md */
+  --spacing-lg: 1.5rem;   /* 24px -> p-lg, m-lg */
+  --spacing-xl: 2rem;     /* 32px -> p-xl, m-xl */
+  --spacing-2xl: 3rem;    /* 48px -> p-2xl, m-2xl */
+  --spacing-3xl: 4rem;    /* 64px -> p-3xl, m-3xl */
+
+  /* Native Container Widths for max-w-* utilities in Tailwind v4 */
+  --container-xs: 20rem;     /* 320px */
+  --container-sm: 24rem;     /* 384px */
+  --container-md: 28rem;     /* 448px */
+  --container-lg: 32rem;     /* 512px */
+  --container-xl: 36rem;     /* 576px */
+  --container-2xl: 42rem;    /* 672px */
+  --container-3xl: 48rem;    /* 768px */
+  --container-4xl: 56rem;    /* 896px */
+  --container-5xl: 64rem;    /* 1024px */
+  --container-6xl: 72rem;    /* 1152px */
+  --container-7xl: 80rem;    /* 1280px */
+
+  /* Borders & Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
 }
+
+/* Custom styled focus rings */
+*:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+/* 
+  Global Unlayered CSS Overrides:
+  These guarantee that standard max-width container classes resolve to their proper widths 
+  and prevent naming collisions with custom Tailwind v4 spacing scale tokens.
+*/
+.max-w-xs { max-width: 20rem !important; }
+.max-w-sm { max-width: 24rem !important; }
+.max-w-md { max-width: 28rem !important; }
+.max-w-lg { max-width: 32rem !important; }
+.max-w-xl { max-width: 36rem !important; }
+.max-w-2xl { max-width: 42rem !important; }
+.max-w-3xl { max-width: 48rem !important; }
+

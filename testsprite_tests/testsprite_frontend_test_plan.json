@@ -1,0 +1,1098 @@
+[
+  {
+    "id": "TC001",
+    "title": "View and use the booking wizard end to end",
+    "description": "This test verifies that a prospective patient can select a treatment, choose a doctor, pick an appointment time, enter contact details, and submit a booking successfully.",
+    "category": "Public Appointment Booking Wizard",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /book"
+      },
+      {
+        "type": "action",
+        "description": "Select a treatment"
+      },
+      {
+        "type": "action",
+        "description": "Select a doctor"
+      },
+      {
+        "type": "action",
+        "description": "Select a valid date"
+      },
+      {
+        "type": "action",
+        "description": "Select a valid time slot"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the contact details"
+      },
+      {
+        "type": "action",
+        "description": "Submit the booking form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a booking confirmation is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC002",
+    "title": "Complete an appointment booking request",
+    "description": "This test verifies that a visitor can select a treatment, choose a doctor, pick a date and time, enter contact details, and submit a booking request successfully.",
+    "category": "Appointment Booking Wizard",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /book"
+      },
+      {
+        "type": "action",
+        "description": "Select a dental treatment category"
+      },
+      {
+        "type": "action",
+        "description": "Select an assigned doctor"
+      },
+      {
+        "type": "action",
+        "description": "Choose a valid date from the calendar picker"
+      },
+      {
+        "type": "action",
+        "description": "Choose an available timeslot"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the name field with a valid name"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with a valid email address"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the phone field with a valid phone number"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the notes field with a brief message"
+      },
+      {
+        "type": "action",
+        "description": "Submit the booking request"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a booking confirmation is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC003",
+    "title": "Review and manage bookings in the admin dashboard",
+    "description": "This test verifies that an administrator can filter bookings, confirm one appointment, and see the updated booking list state.",
+    "category": "Admin Booking Management",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /admin"
+      },
+      {
+        "type": "action",
+        "description": "Filter the bookings list"
+      },
+      {
+        "type": "action",
+        "description": "Open a booking record"
+      },
+      {
+        "type": "action",
+        "description": "Confirm the appointment"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the booking list reflects the updated appointment state"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC004",
+    "title": "Cancel a booking from the admin dashboard",
+    "description": "This test verifies that an administrator can cancel an appointment and see it reflected in the bookings list.",
+    "category": "Admin Booking Management",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /admin"
+      },
+      {
+        "type": "action",
+        "description": "Filter the bookings list"
+      },
+      {
+        "type": "action",
+        "description": "Open a booking record"
+      },
+      {
+        "type": "action",
+        "description": "Cancel the appointment"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the booking list reflects the canceled appointment state"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC005",
+    "title": "Keep booking required fields from submitting empty",
+    "description": "This test verifies that the booking wizard prevents submission when required selections and contact details are missing.",
+    "category": "Public Appointment Booking Wizard",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /book"
+      },
+      {
+        "type": "action",
+        "description": "Submit the booking form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify required field validation messages are visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC006",
+    "title": "Book an appointment with a prefilled treatment from a case study",
+    "description": "This test verifies that a prospective patient can start from a before-and-after case study and reach a prefilled booking form ready to complete.",
+    "category": "Appointment Booking Wizard",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /before-after"
+      },
+      {
+        "type": "action",
+        "description": "Open a case study booking entry point"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the booking form opens with a treatment preselected"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the booking flow is ready for the remaining appointment details"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC007",
+    "title": "Delete a booking from the admin dashboard",
+    "description": "This verifies an administrator can remove a booking and the booking disappears from the list.",
+    "category": "Clinic Administration Console",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /admin"
+      },
+      {
+        "type": "action",
+        "description": "Switch to the bookings panel"
+      },
+      {
+        "type": "action",
+        "description": "Search for an existing booking"
+      },
+      {
+        "type": "action",
+        "description": "Delete the booking"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the booking is no longer shown in the list"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC008",
+    "title": "Show validation when required booking details are missing",
+    "description": "This test verifies that the booking form blocks submission and shows validation feedback when required contact details are incomplete.",
+    "category": "Appointment Booking Wizard",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /book"
+      },
+      {
+        "type": "action",
+        "description": "Select a dental treatment category"
+      },
+      {
+        "type": "action",
+        "description": "Select an assigned doctor"
+      },
+      {
+        "type": "action",
+        "description": "Choose a valid date from the calendar picker"
+      },
+      {
+        "type": "action",
+        "description": "Choose an available timeslot"
+      },
+      {
+        "type": "action",
+        "description": "Submit the booking request"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify booking validation feedback is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the booking request is not submitted"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC009",
+    "title": "Review and delete contact messages from the admin dashboard",
+    "description": "This verifies an administrator can search messages, remove one, and see the updated results list.",
+    "category": "Clinic Administration Console",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /admin"
+      },
+      {
+        "type": "action",
+        "description": "Switch to the messages panel"
+      },
+      {
+        "type": "action",
+        "description": "Search for a message"
+      },
+      {
+        "type": "action",
+        "description": "Delete the message"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the message is no longer shown in the list"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC010",
+    "title": "Show booking validation for an invalid email",
+    "description": "This test verifies that the booking wizard rejects an invalid email format and keeps the user on the form with validation feedback.",
+    "category": "Public Appointment Booking Wizard",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /book"
+      },
+      {
+        "type": "action",
+        "description": "Select a treatment"
+      },
+      {
+        "type": "action",
+        "description": "Select a doctor"
+      },
+      {
+        "type": "action",
+        "description": "Select a valid date"
+      },
+      {
+        "type": "action",
+        "description": "Select a valid time slot"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the contact details with an invalid email"
+      },
+      {
+        "type": "action",
+        "description": "Submit the booking form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an email validation error is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC011",
+    "title": "Browse clinic information across public pages",
+    "description": "This test verifies that a visitor can review the clinic summary, explore the core information pages, and find FAQ answers through search and expansion.",
+    "category": "Public Clinic Information Pages",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the clinic summary and dentist previews are displayed"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to view the about page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify clinical services and facility details are displayed"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to view the services page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify treatment categories are displayed"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to view the doctors page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the dentist roster is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to view the FAQ page"
+      },
+      {
+        "type": "action",
+        "description": "Search for a question"
+      },
+      {
+        "type": "action",
+        "description": "Expand an answer category"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a FAQ answer is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC012",
+    "title": "Send a contact inquiry successfully",
+    "description": "This test verifies that a visitor can submit the contact form with valid details and receive a confirmation of submission.",
+    "category": "Contact Inquiry Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the name field with a valid name"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with a valid email address"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the phone field with a valid phone number"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the message field with a brief inquiry"
+      },
+      {
+        "type": "action",
+        "description": "Submit the contact form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a submission confirmation is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC013",
+    "title": "Search and manage admin messages",
+    "description": "This test verifies that an administrator can search messages and open a message for review in the dashboard.",
+    "category": "Admin Message Management",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /admin"
+      },
+      {
+        "type": "action",
+        "description": "Search for a message"
+      },
+      {
+        "type": "action",
+        "description": "Open a message record"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the selected message is displayed for review"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC014",
+    "title": "Review and delete newsletter subscribers from the admin dashboard",
+    "description": "This verifies an administrator can search subscribers, remove one, and see the updated subscribers list.",
+    "category": "Clinic Administration Console",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /admin"
+      },
+      {
+        "type": "action",
+        "description": "Switch to the subscribers panel"
+      },
+      {
+        "type": "action",
+        "description": "Search for a subscriber"
+      },
+      {
+        "type": "action",
+        "description": "Delete the subscriber"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the subscriber is no longer shown in the list"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC015",
+    "title": "Subscribe to the newsletter from the homepage footer",
+    "description": "This test verifies that a visitor can enter an email in the footer subscription form and see a successful signup confirmation.",
+    "category": "Newsletter Subscription",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer subscription area"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the newsletter email field with a valid email address"
+      },
+      {
+        "type": "action",
+        "description": "Submit the subscription form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a newsletter signup confirmation is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC016",
+    "title": "Start booking from a before-and-after case study",
+    "description": "This test verifies that a visitor can open a case study and use it to begin booking with prefilled context.",
+    "category": "Before-and-After Case Study Viewing",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /before-after"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify clinical case study cards are displayed"
+      },
+      {
+        "type": "action",
+        "description": "Open a case study"
+      },
+      {
+        "type": "action",
+        "description": "Trigger booking with case context"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the booking workflow opens with prefilled context"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC017",
+    "title": "Switch admin panels and review UI-only management areas",
+    "description": "This test verifies that an administrator can switch between dashboard panels and inspect the UI-only editors for doctors, services, blogs, and testimonials.",
+    "category": "Admin Configuration and UI-Only Editing",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /admin"
+      },
+      {
+        "type": "action",
+        "description": "Switch to the doctors management area"
+      },
+      {
+        "type": "action",
+        "description": "Switch to the services management area"
+      },
+      {
+        "type": "action",
+        "description": "Switch to the blog management area"
+      },
+      {
+        "type": "action",
+        "description": "Switch to the testimonials management area"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the management areas are displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC018",
+    "title": "Browse the clinic homepage and navigate to key public information pages",
+    "description": "This test verifies that a visitor can review the homepage summary and move through the main public information pages used before booking.",
+    "category": "Appointment Booking Wizard",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to view the services page"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to view the doctors page"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to view the FAQ page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the public information pages are accessible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user can return to booking from the public navigation"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC019",
+    "title": "Filter gallery images by category",
+    "description": "This test verifies that a visitor can narrow the gallery to a selected category and see only the matching image cards.",
+    "category": "Gallery Browsing with Filters and Lightbox",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /gallery"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the full image gallery is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Select a category filter"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the gallery is filtered to matching image cards"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC020",
+    "title": "Switch simulated action mode in admin settings",
+    "description": "This verifies an administrator can open settings, toggle simulated action mode, and return to the management panels.",
+    "category": "Clinic Administration Console",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /admin"
+      },
+      {
+        "type": "action",
+        "description": "Open the settings panel"
+      },
+      {
+        "type": "action",
+        "description": "Toggle simulated action mode"
+      },
+      {
+        "type": "action",
+        "description": "Return to the bookings panel"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the management panel remains accessible after changing settings"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC021",
+    "title": "Prevent contact form submission with missing required details",
+    "description": "This test verifies that the contact form shows validation feedback when required fields are left empty.",
+    "category": "Contact Inquiry Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "action",
+        "description": "Submit the contact form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify required field validation messages are visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC022",
+    "title": "Filter gallery items by category",
+    "description": "This test verifies that a visitor can browse the gallery and narrow the displayed items using category filters.",
+    "category": "Gallery Browsing",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /gallery"
+      },
+      {
+        "type": "action",
+        "description": "Select a gallery category filter"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the gallery updates to show matching items"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify non-matching items are hidden"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC023",
+    "title": "Use the admin settings panel to toggle simulated action mode",
+    "description": "This test verifies that an administrator can change the simulated action mode setting and see the updated control state in the dashboard.",
+    "category": "Admin Configuration and UI-Only Editing",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /admin"
+      },
+      {
+        "type": "action",
+        "description": "Open the settings panel"
+      },
+      {
+        "type": "action",
+        "description": "Toggle simulated action mode"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the updated settings state is displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC024",
+    "title": "Search FAQs and expand an answer",
+    "description": "This test verifies that a visitor can find relevant FAQ content with search and expand an accordion answer.",
+    "category": "FAQ Browsing",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /faq"
+      },
+      {
+        "type": "action",
+        "description": "Enter a search term in the FAQ search field"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify matching FAQ results are displayed"
+      },
+      {
+        "type": "action",
+        "description": "Expand a FAQ question"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the answer content is visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC025",
+    "title": "Manage doctors in the admin UI",
+    "description": "This verifies an administrator can edit doctor information in the UI-only management area and see the updated roster state.",
+    "category": "Clinic Administration Console",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /admin"
+      },
+      {
+        "type": "action",
+        "description": "Open the doctors management panel"
+      },
+      {
+        "type": "action",
+        "description": "Edit a doctor entry"
+      },
+      {
+        "type": "action",
+        "description": "Save the change"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the doctor list reflects the edited entry"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC026",
+    "title": "Manage services in the admin UI",
+    "description": "This verifies an administrator can edit service information in the UI-only management area and see the updated service state.",
+    "category": "Clinic Administration Console",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /admin"
+      },
+      {
+        "type": "action",
+        "description": "Open the services management panel"
+      },
+      {
+        "type": "action",
+        "description": "Edit a service entry"
+      },
+      {
+        "type": "action",
+        "description": "Save the change"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the service list reflects the edited entry"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC027",
+    "title": "Open and dismiss a gallery lightbox",
+    "description": "This test verifies that a visitor can open a gallery photo in the lightbox and close it to return to browsing.",
+    "category": "Gallery Browsing with Filters and Lightbox",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /gallery"
+      },
+      {
+        "type": "action",
+        "description": "Open a photo in the lightbox"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the lightbox is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Dismiss the lightbox"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the lightbox is closed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC028",
+    "title": "Preview gallery image details on hover",
+    "description": "This test verifies that hovering a gallery photo card reveals the image description overlay for closer inspection.",
+    "category": "Gallery Browsing with Filters and Lightbox",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /gallery"
+      },
+      {
+        "type": "action",
+        "description": "Hover over a photo card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an image description overlay is displayed"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC029",
+    "title": "Show validation when contact required fields are missing",
+    "description": "This test verifies that the contact form shows validation feedback when a visitor tries to submit incomplete information.",
+    "category": "Contact Inquiry Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with a valid email address"
+      },
+      {
+        "type": "action",
+        "description": "Submit the contact form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify contact validation feedback is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the message is not submitted"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC030",
+    "title": "Delete an admin record and see the list refresh",
+    "description": "This test verifies that an administrator can delete a record from a management list and see it removed from the current view.",
+    "category": "Admin Message Management",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /admin"
+      },
+      {
+        "type": "action",
+        "description": "Open a record from a manageable list"
+      },
+      {
+        "type": "action",
+        "description": "Delete the record"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the record is removed from the list"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC031",
+    "title": "Manage blog posts in the admin UI",
+    "description": "This verifies an administrator can update blog post status in the UI-only management area and see the change reflected.",
+    "category": "Clinic Administration Console",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /admin"
+      },
+      {
+        "type": "action",
+        "description": "Open the blog management panel"
+      },
+      {
+        "type": "action",
+        "description": "Edit a blog post entry"
+      },
+      {
+        "type": "action",
+        "description": "Save the change"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the blog list reflects the edited entry"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC032",
+    "title": "Handle no available booking time slots",
+    "description": "This test verifies that the booking wizard shows an empty state when a chosen date has no available appointment times.",
+    "category": "Public Appointment Booking Wizard",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /book"
+      },
+      {
+        "type": "action",
+        "description": "Select a treatment"
+      },
+      {
+        "type": "action",
+        "description": "Select a doctor"
+      },
+      {
+        "type": "action",
+        "description": "Select a date with no available time slots"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a no available timeslots message is visible"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC033",
+    "title": "Manage testimonials in the admin UI",
+    "description": "This verifies an administrator can edit testimonial moderation state in the UI-only management area and see the updated review list.",
+    "category": "Clinic Administration Console",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /admin"
+      },
+      {
+        "type": "action",
+        "description": "Open the testimonials management panel"
+      },
+      {
+        "type": "action",
+        "description": "Edit a testimonial entry"
+      },
+      {
+        "type": "action",
+        "description": "Save the change"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the testimonial list reflects the edited entry"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC034",
+    "title": "Show validation for an invalid newsletter email",
+    "description": "This test verifies that the newsletter form rejects an invalid email address and shows validation feedback.",
+    "category": "Newsletter Subscription",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the footer subscription area"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the newsletter email field with an invalid email address"
+      },
+      {
+        "type": "action",
+        "description": "Submit the subscription form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify newsletter email validation feedback is visible"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC035",
+    "title": "Open and close a gallery image preview",
+    "description": "This test verifies that a visitor can open a gallery item in a lightbox and dismiss it to return to the gallery.",
+    "category": "Gallery Browsing",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /gallery"
+      },
+      {
+        "type": "action",
+        "description": "Open a gallery item preview"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the image preview is visible"
+      },
+      {
+        "type": "action",
+        "description": "Dismiss the image preview"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the gallery is visible again"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC036",
+    "title": "Handle an empty FAQ search result",
+    "description": "This test verifies that the FAQ page shows an empty state when a search term matches no questions.",
+    "category": "FAQ Browsing",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /faq"
+      },
+      {
+        "type": "action",
+        "description": "Enter a unique search term in the FAQ search field"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an empty state message is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify no FAQ answers are shown"
+      }
+    ],
+    "priority": "Low"
+  }
+]
