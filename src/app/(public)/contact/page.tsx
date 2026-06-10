@@ -14,7 +14,7 @@ const contactSchema = z.object({
   phone: z
     .string()
     .min(1, "Phone number is required")
-    .refine((val) => /^\+?[0-9\s-]{10,15}$/.test(val), "Please enter a valid phone number (e.g. +91 98765 43210)"),
+    .refine((val) => /^\+?[0-9\s-]{10,15}$/.test(val), "Please enter a valid phone number (e.g. +91 98765 12345)"),
   message: z.string().min(5, "Message must be at least 5 characters"),
 });
 
@@ -65,7 +65,7 @@ export default function ContactPage() {
             Connect With Us
           </span>
           <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-text-primary mt-md tracking-tight">
-            Contact SmileCraft Clinic
+            Contact Aura Dental Care
           </h1>
           <p className="font-body text-sm sm:text-base text-text-secondary mt-sm max-w-xl mx-auto leading-relaxed">
             Have questions regarding appointments, treatments, or billing? Reach out to our receptionist desk or drop us a message.
@@ -89,8 +89,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-text-primary">Call Reception Desk</h4>
-                    <p className="mt-0.5">+91 98765 43210</p>
-                    <p className="text-xs text-text-muted mt-0.5">Toll Free: +91 79 4000 5000</p>
+                    <p className="mt-0.5">+91 98765 12345</p>
+                    <p className="text-xs text-text-muted mt-0.5">Toll Free: +91 79 4000 1234</p>
                   </div>
                 </div>
 
@@ -101,8 +101,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-text-primary">Email Support</h4>
-                    <p className="mt-0.5"><a href="mailto:info@smilecraftclinic.com" className="hover:underline">info@smilecraftclinic.com</a></p>
-                    <p className="text-xs text-text-muted mt-0.5">Appointments: <a href="mailto:appointments@smilecraftclinic.com" className="hover:underline">appointments@smilecraftclinic.com</a></p>
+                    <p className="mt-0.5"><a href="mailto:info@brightsmiledental.com" className="hover:underline">info@brightsmiledental.com</a></p>
+                    <p className="text-xs text-text-muted mt-0.5">Appointments: <a href="mailto:appointments@brightsmiledental.com" className="hover:underline">appointments@brightsmiledental.com</a></p>
                   </div>
                 </div>
 
@@ -112,9 +112,9 @@ export default function ContactPage() {
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-text-primary">SmileCraft Location</h4>
+                    <h4 className="font-semibold text-text-primary">Aura Dental Care Location</h4>
                     <p className="mt-0.5 leading-relaxed">
-                      4, Ground Floor, Olive Arcade, Off CG Road, Navrangpura, Ahmedabad, Gujarat 380009
+                      402, Harmony Business Hub, Near Satellite Cross Road, SG Highway, Ahmedabad, Gujarat 380015
                     </p>
                   </div>
                 </div>
@@ -136,8 +136,8 @@ export default function ContactPage() {
             {/* Map Embed Container */}
             <div className="bg-surface border border-surface-muted rounded-2xl overflow-hidden shadow-card h-[280px] relative">
               <iframe
-                title="SmileCraft Dental Clinic Navrangpura Ahmedabad Google Map Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.6966144888126!2d72.5583685!3d23.0349141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f501062cdb%3A0xc3ea125139046c87!2sCG%20Rd%2C%20Navrangpura%2C%20Ahmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1716388910000!5m2!1sen!2sin"
+                title="Aura Dental Care Ahmedabad Google Map Location"
+                src="https://maps.google.com/maps?q=402,Harmony%20Business%20Hub,Near%20Satellite%20Cross%20Road,SG%20Highway,Ahmedabad,Gujarat%20380015&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -247,7 +247,7 @@ export default function ContactPage() {
                         <input
                           type="text"
                           id="phone"
-                          placeholder="+91 98765 43210"
+                          placeholder="+91 98765 12345"
                           {...register("phone")}
                           className="w-full bg-surface border border-surface-muted rounded-md py-md pl-xl pr-md text-sm text-text-primary focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500"
                         />

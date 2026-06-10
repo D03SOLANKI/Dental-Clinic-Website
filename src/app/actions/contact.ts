@@ -46,21 +46,21 @@ export async function submitContactAction(formData: {
       // Send receipt email to Patient
       try {
         await resend.emails.send({
-          from: "SmileCraft <no-reply@smilecraftclinic.com>",
+          from: "Aura Dental Care <no-reply@brightsmiledental.com>",
           to: email,
-          subject: "We've received your message - SmileCraft",
+          subject: "We've received your message - Aura Dental Care",
           html: `
             <div style="font-family: 'Outfit', sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e2e8f0; border-radius: 12px; background-color: #ffffff; color: #1e293b;">
               <!-- Header -->
               <div style="text-align: center; border-bottom: 2px solid #3b82f6; padding-bottom: 15px; margin-bottom: 25px;">
-                <h1 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #1e3a8a; margin: 0; font-size: 24px;">SmileCraft Dental Clinic</h1>
+                <h1 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #1e3a8a; margin: 0; font-size: 24px;">Aura Dental Care</h1>
                 <p style="color: #64748b; font-size: 14px; margin: 5px 0 0 0; font-style: italic;">Gentle Care. Confident Smiles.</p>
               </div>
               
               <!-- Content -->
               <h2 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #1e293b; font-size: 18px; margin-top: 0;">Dear ${name},</h2>
               <p style="font-size: 15px; line-height: 1.6; color: #475569;">
-                Thank you for contacting SmileCraft Dental Clinic. We have received your inquiry and our desk team will get back to you shortly.
+                Thank you for contacting Aura Dental Care. We have received your inquiry and our desk team will get back to you shortly.
               </p>
               
               <div style="background-color: #f8fafc; border-radius: 8px; padding: 15px; margin: 20px 0;">
@@ -69,13 +69,13 @@ export async function submitContactAction(formData: {
               </div>
 
               <p style="font-size: 15px; line-height: 1.6; color: #475569;">
-                If your inquiry is urgent, please call our emergency helpline at <strong style="color: #1e3a8a;">+91 79 4000 5000</strong>.
+                If your inquiry is urgent, please call our reception desk at <strong style="color: #1e3a8a;">+91 98765 12345</strong>.
               </p>
               
               <!-- Footer -->
               <div style="border-top: 1px solid #e2e8f0; padding-top: 15px; text-align: center; font-size: 12px; color: #94a3b8; margin-top: 30px;">
-                <p style="margin: 0 0 5px 0;">SmileCraft Clinic, Ahmedabad, Gujarat, India</p>
-                <p style="margin: 0;">&copy; ${new Date().getFullYear()} SmileCraft Clinic. All rights reserved.</p>
+                <p style="margin: 0 0 5px 0;">Aura Dental Care, Ahmedabad, Gujarat, India</p>
+                <p style="margin: 0;">&copy; ${new Date().getFullYear()} Aura Dental Care. All rights reserved.</p>
               </div>
             </div>
           `,
@@ -85,10 +85,10 @@ export async function submitContactAction(formData: {
       }
 
       // Send alert email to Admin
-      const adminEmail = process.env.CLINIC_ADMIN_EMAIL || "info@smilecraftclinic.com";
+      const adminEmail = process.env.CLINIC_ADMIN_EMAIL || "info@brightsmiledental.com";
       try {
         await resend.emails.send({
-          from: "SmileCraft Portal <no-reply@smilecraftclinic.com>",
+          from: "Aura Dental Care Portal <no-reply@brightsmiledental.com>",
           to: adminEmail,
           subject: `New Contact Inquiry from ${name}`,
           html: `
@@ -113,7 +113,7 @@ export async function submitContactAction(formData: {
                 </tr>
               </table>
               <div style="margin-top: 25px; font-size: 11px; color: #94a3b8; border-top: 1px solid #e2e8f0; padding-top: 10px;">
-                This inquiry was submitted on ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })} via SmileCraft Portal.
+                This inquiry was submitted on ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })} via Aura Dental Care Portal.
               </div>
             </div>
           `,

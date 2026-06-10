@@ -86,10 +86,10 @@ export default function AdminDashboardClient({
   ]);
   const [testimonialsList, setTestimonialsList] = useState(initialTestimonials);
   const [settingsForm, setSettingsForm] = useState({
-    clinicName: "SmileCraft Dental Clinic",
-    phone: "+91 98765 43210",
+    clinicName: "Aura Dental Care",
+    phone: "+91 98765 12345",
     emergencyDesk: "+91 99999 88888",
-    address: "CG Road, Navrangpura, Ahmedabad",
+    address: "SG Highway, Satellite, Ahmedabad",
     demoMode: true,
   });
 

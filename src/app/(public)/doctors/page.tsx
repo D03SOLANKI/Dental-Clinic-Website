@@ -71,13 +71,13 @@ export default function DoctorsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-md mt-xs">
             <a
-              href="tel:+919876543210"
+              href="tel:+919876512345"
               className="bg-primary-500 hover:bg-primary-600 text-text-inverse font-body text-sm font-semibold px-xl py-md rounded-md transition-colors shadow-sm"
             >
-              Call Clinic: +91 98765 43210
+              Call Clinic: +91 98765 12345
             </a>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919876512345"
               className="bg-emerald-600 hover:bg-emerald-700 text-text-inverse font-body text-sm font-semibold px-xl py-md rounded-md transition-colors shadow-sm flex items-center justify-center gap-xs"
             >
               WhatsApp Support

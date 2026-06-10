@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function AdminSidebar() {
   return (
     <aside className="w-full md:w-64 bg-text-primary text-text-inverse md:min-h-screen p-md flex flex-col shrink-0">
-      <div className="font-display font-bold text-lg mb-md md:mb-xl text-primary-500 text-center md:text-left">SmileCraft Admin</div>
+      <div className="font-display font-bold text-lg mb-md md:mb-xl text-primary-500 text-center md:text-left">Aura Dental Admin</div>
       <nav className="flex flex-row md:flex-col flex-wrap justify-center md:justify-start gap-x-md gap-y-xs md:gap-md text-xs md:text-sm text-text-muted flex-grow">
         <Link 
           href="/admin?tab=appointments" 

@@ -44,7 +44,7 @@ const caseStudies: CaseStudy[] = [
     ],
     beforeImage: "/images/gallery_1.png", // fallback aesthetic image
     afterImage: "/images/hero_dentist.png", // fallback aesthetic image
-    patientReview: "Dr. Aarav and the SmileCraft team completely transformed my mouth. I can chew perfectly and laugh without hiding my face.",
+    patientReview: "Dr. Aarav and the Aura Dental Care team completely transformed my mouth. I can chew perfectly and laugh without hiding my face.",
   },
   {
     id: 2,
@@ -134,7 +134,7 @@ export default function BeforeAfterPage() {
           Before & After Case Studies
         </h1>
         <p className="font-body text-sm sm:text-base text-text-secondary mt-sm max-w-xl mx-auto leading-relaxed">
-          See the clinical evidence of our dental expertise. Real dental restoral cases and cosmetic smile makeovers performed at SmileCraft in Ahmedabad.
+          See the clinical evidence of our dental expertise. Real dental restoral cases and cosmetic smile makeovers performed at Aura Dental Care in Ahmedabad.
         </p>
       </section>
 

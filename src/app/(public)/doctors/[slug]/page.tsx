@@ -93,7 +93,7 @@ export default async function DoctorDetailPage({ params }: PageProps) {
                 Book Appointment
               </Link>
               <a
-                href="tel:+919876543210"
+                href="tel:+919876512345"
                 className="border border-surface-muted hover:bg-surface-subtle text-text-secondary font-body text-sm font-semibold py-md rounded-md text-center transition-colors"
               >
                 Call Clinic Desk

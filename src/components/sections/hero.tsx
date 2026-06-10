@@ -60,7 +60,7 @@ export default function Hero() {
             className="flex items-center gap-xs bg-primary-50 text-primary-700 px-md py-sm rounded-full text-xs font-semibold tracking-wide uppercase shadow-sm"
           >
             <ShieldCheck className="h-4 w-4 text-primary-500" />
-            SmileCraft Dental Clinic
+            Aura Dental Care
           </motion.div>
 
           {/* Heading */}
@@ -81,7 +81,7 @@ export default function Hero() {
             variants={itemVariants}
             className="font-body text-base sm:text-lg text-text-secondary leading-relaxed max-w-xl"
           >
-            At SmileCraft, we combine advanced digital dentistry with a gentle, pain-free approach to design your perfect smile. Experience world-class dental care in the heart of Ahmedabad.
+            At Aura Dental Care, we combine advanced digital dentistry with a gentle, pain-free approach to design your perfect smile. Experience world-class dental care in the heart of Ahmedabad.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -147,7 +147,7 @@ export default function Hero() {
         >
           <Image
             src="/images/hero_dentist.png"
-            alt="SmileCraft premium modern clinic interior with warm atmospheric lighting"
+            alt="Aura Dental Care premium modern clinic interior with warm atmospheric lighting"
             fill
             priority
             sizes="(max-w-720px) 100vw, 40vw"

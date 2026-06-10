@@ -17,10 +17,10 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | SmileCraft Dental Clinic",
-    default: "SmileCraft Dental Clinic | Premium Dental Care Ahmedabad",
+    template: "%s | Aura Dental Care",
+    default: "Aura Dental Care | Premium Dental Care Ahmedabad",
   },
-  description: "SmileCraft Dental Clinic offers gentle, advanced pain-free digital dental treatments, including implants, orthodontics, teeth whitening, and smile makeovers in Ahmedabad.",
+  description: "Aura Dental Care offers gentle, advanced pain-free digital dental treatments, including implants, orthodontics, teeth whitening, and smile makeovers in Ahmedabad.",
   keywords: [
     "Best Dental Clinic in Ahmedabad",
     "Dental Implants Ahmedabad",
@@ -29,21 +29,21 @@ export const metadata: Metadata = {
     "Emergency Dentist Ahmedabad",
     "Smile Makeover Clinic",
   ],
-  metadataBase: new URL("https://www.smilecraftdental.com"),
+  metadataBase: new URL("https://www.brightsmiledental.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "SmileCraft Dental Clinic | Gentle Care. Confident Smiles.",
+    title: "Aura Dental Care | Gentle Care. Confident Smiles.",
     description: "Experience premium digital dentistry in Ahmedabad. Gentle care, pain-free treatments, and confident smiles designed by our expert specialists.",
-    url: "https://www.smilecraftdental.com",
-    siteName: "SmileCraft Dental Clinic",
+    url: "https://www.brightsmiledental.com",
+    siteName: "Aura Dental Care",
     locale: "en-IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SmileCraft Dental Clinic | Premium Dental Care",
+    title: "Aura Dental Care | Premium Dental Care",
     description: "Experience premium digital dentistry in Ahmedabad. Gentle care, pain-free treatments, and confident smiles.",
   },
   robots: {

@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { services, doctors } from "@/lib/mockData";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://www.smilecraftdental.com";
+  const baseUrl = "https://www.brightsmiledental.com";
 
   // Static routes
   const staticRoutes = [

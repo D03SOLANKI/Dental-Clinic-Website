@@ -120,7 +120,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               <div className="font-body">
                 <h4 className="text-emerald-900 text-sm font-bold">100% Sterile Consultation Guarantee</h4>
                 <p className="text-emerald-800 text-xs mt-xs leading-relaxed">
-                  SmileCraft operates Class-B biological sterilisation monitors and single-use diagnostic barrier films, meeting international health and safety guidelines.
+                  Aura Dental Care operates Class-B biological sterilisation monitors and single-use diagnostic barrier films, meeting international health and safety guidelines.
                 </p>
               </div>
             </div>
@@ -167,7 +167,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   Book This Treatment
                 </Link>
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919876512345"
                   className="border border-surface-muted hover:bg-surface-subtle text-text-secondary font-body text-sm font-semibold py-md rounded-md text-center transition-colors"
                 >
                   Call Clinic Desk

@@ -28,13 +28,13 @@ export default function ServicesPage() {
         {/* Page Title */}
         <div className="text-center mb-2xl">
           <span className="font-body text-xs font-bold uppercase tracking-wider text-primary-600 bg-primary-50 px-md py-sm rounded-full">
-            SmileCraft Treatments
+            Aura Dental Care Treatments
           </span>
           <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-text-primary mt-md tracking-tight">
             Our Dental Services Catalog
           </h1>
           <p className="font-body text-sm sm:text-base text-text-secondary mt-sm max-w-xl mx-auto leading-relaxed">
-            From routine checkups to custom cosmetic makeovers, explore our range of advanced digital dental solutions in Navrangpura, Ahmedabad.
+            From routine checkups to custom cosmetic makeovers, explore our range of advanced digital dental solutions on SG Highway, Ahmedabad.
           </p>
         </div>
 

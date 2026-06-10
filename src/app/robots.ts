@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://www.smilecraftdental.com";
+  const baseUrl = "https://www.brightsmiledental.com";
   return {
     rules: {
       userAgent: "*",

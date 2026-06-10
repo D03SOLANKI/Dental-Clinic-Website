@@ -15,9 +15,9 @@ export function generateSEO({
   ogImage = "/images/hero_dentist.png",
   noIndex = false,
 }: SEOProps): Metadata {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://smilecraftclinic.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://brightsmiledental.com";
   const canonicalUrl = `${siteUrl}${path}`;
-  const fullTitle = `${title} | SmileCraft Dental Clinic`;
+  const fullTitle = `${title} | Aura Dental Care`;
 
   return {
     title: fullTitle,
@@ -29,7 +29,7 @@ export function generateSEO({
       title: fullTitle,
       description,
       url: canonicalUrl,
-      siteName: "SmileCraft Dental Clinic",
+      siteName: "Aura Dental Care",
       locale: "en_IN",
       type: "website",
       images: [
@@ -37,7 +37,7 @@ export function generateSEO({
           url: ogImage.startsWith("http") ? ogImage : `${siteUrl}${ogImage}`,
           width: 1200,
           height: 630,
-          alt: `${title} - SmileCraft Dental Clinic`,
+          alt: `${title} - Aura Dental Care`,
         },
       ],
     },

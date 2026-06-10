@@ -5,7 +5,7 @@ import { Cpu, Heart, ShieldCheck, Eye, Smile, Calendar, ArrowRight } from "lucid
 
 export const metadata = {
   title: "About Us",
-  description: "Learn about SmileCraft Dental Clinic, our values, advanced pain-free technologies, sterilisation practices, and modern facilities in Navrangpura, Ahmedabad.",
+  description: "Learn about Aura Dental Care, our values, advanced pain-free technologies, sterilisation practices, and modern facilities on SG Highway, Ahmedabad.",
 };
 
 export default function AboutPage() {
@@ -37,13 +37,13 @@ export default function AboutPage() {
       {/* 1. Page Header */}
       <section className="px-md sm:px-lg text-center mb-2xl">
         <span className="font-body text-xs font-bold uppercase tracking-wider text-primary-600 bg-primary-50 px-md py-sm rounded-full">
-          About SmileCraft
+          About Aura Dental Care
         </span>
         <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-text-primary mt-md tracking-tight">
           Gentle Care. Confident Smiles.
         </h1>
         <p className="font-body text-sm sm:text-base text-text-secondary mt-sm max-w-xl mx-auto leading-relaxed">
-          Founded in Ahmedabad, SmileCraft combines clinical excellence in dentistry with premium luxury patient care.
+          Founded in Ahmedabad, Aura Dental Care combines clinical excellence in dentistry with premium luxury patient care.
         </p>
       </section>
 
@@ -56,7 +56,7 @@ export default function AboutPage() {
               Redefining the Dental Experience
             </h2>
             <p className="font-body text-sm sm:text-base text-text-secondary leading-relaxed">
-              We started SmileCraft with a simple realization: standard dental visits are outdated, intimidating, and often uncomfortable. We set out to change that by constructing a boutique dental studio in Navrangpura, Ahmedabad that feels more like a relaxing lounge than a clinic.
+              We started Aura Dental Care with a simple realization: standard dental visits are outdated, intimidating, and often uncomfortable. We set out to change that by constructing a boutique dental studio on SG Highway, Ahmedabad that feels more like a relaxing lounge than a clinic.
             </p>
             <p className="font-body text-sm sm:text-base text-text-secondary leading-relaxed">
               Led by MDS prosthodontists, oral surgeons, and pediatric specialists, we offer customized care using digital workflows. This reduces procedure times by up to 50%, while ensuring beautiful, long-lasting aesthetic and restoration results.
@@ -67,7 +67,7 @@ export default function AboutPage() {
           <div className="lg:col-span-6 relative w-full h-[300px] sm:h-[400px] rounded-2xl overflow-hidden shadow-card-lg border border-surface-muted">
             <Image
               src="/images/hero_dentist.png"
-              alt="SmileCraft modern dental clinic treatment studio"
+              alt="Aura Dental Care modern dental clinic treatment studio"
               fill
               sizes="(max-w-720px) 100vw, 50vw"
               className="object-cover"
@@ -118,7 +118,7 @@ export default function AboutPage() {
           <div className="relative w-full sm:w-1/3 h-[200px] rounded-xl overflow-hidden shrink-0">
             <Image
               src="/images/female_dentist.png"
-              alt="Female Dentist at SmileCraft Navrangpura"
+              alt="Female Dentist at Aura Dental Care SG Highway"
               fill
               sizes="(max-w-720px) 100vw, 15vw"
               className="object-cover object-top"
@@ -126,10 +126,10 @@ export default function AboutPage() {
           </div>
           <div className="space-y-md flex-1 w-full">
             <h3 className="font-display text-xl font-bold text-text-primary">
-              Our Navrangpura Facility
+              Our SG Highway Facility
             </h3>
             <p className="font-body text-xs sm:text-sm text-text-secondary leading-relaxed">
-              Located off CG Road in Navrangpura, our Ahmedabad clinic features quiet consultation chambers, dedicated biological instrument processing labs, and a child-friendly pediatric consultation suite. All rooms are equipped with HEPA biological filtration units.
+              Located near Satellite Cross Road on SG Highway, our Ahmedabad clinic features quiet consultation chambers, dedicated biological instrument processing labs, and a child-friendly pediatric consultation suite. All rooms are equipped with HEPA biological filtration units.
             </p>
             <div className="flex flex-wrap gap-md text-xs font-semibold text-text-primary pt-xs">
               <span className="flex items-center gap-xs whitespace-nowrap"><Smile className="h-4 w-4 text-primary-500 shrink-0" /> Free Valet Parking</span>

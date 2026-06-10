@@ -4,7 +4,7 @@ import { Loader2 } from "lucide-react";
 
 export const metadata = {
   title: "Book Appointment",
-  description: "Book an online appointment slot for root canal treatments, invisible aligners, cosmetic scaling, and teeth whitening at SmileCraft clinic Navrangpura, Ahmedabad.",
+  description: "Book an online appointment slot for root canal treatments, invisible aligners, cosmetic scaling, and teeth whitening at Aura Dental Care on SG Highway, Ahmedabad.",
 };
 
 function BookingLoader() {

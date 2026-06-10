@@ -32,7 +32,7 @@ const bookingSchema = z.object({
   patientPhone: z
     .string()
     .min(1, "Phone number is required")
-    .refine((val) => /^\+?[0-9\s-]{10,15}$/.test(val), "Please enter a valid phone number (e.g. +91 98765 43210)"),
+    .refine((val) => /^\+?[0-9\s-]{10,15}$/.test(val), "Please enter a valid phone number (e.g. +91 98765 12345)"),
   notes: z.string().optional(),
 });
 
@@ -134,17 +134,17 @@ export async function bookAppointmentAction(formData: {
       // Standard dental appointment is scheduled for 45 minutes
       const endTime = new Date(startTime.getTime() + 45 * 60000);
 
-      const calendar = ical({ name: "SmileCraft Appointment" });
+      const calendar = ical({ name: "Aura Dental Care Appointment" });
       calendar.createEvent({
         id: appointmentId,
         start: startTime,
         end: endTime,
-        summary: `Dental Appointment: ${selectedService.name} - SmileCraft`,
-        description: `Your dental appointment with ${selectedDoctor.name}.\n\nTreatment: ${selectedService.name}\nDuration: ${selectedService.duration_minutes} minutes\nNotes: ${data.notes || "None"}\n\nThank you for choosing SmileCraft.`,
-        location: "SmileCraft Dental Clinic, Ahmedabad, Gujarat, India",
+        summary: `Dental Appointment: ${selectedService.name} - Aura Dental Care`,
+        description: `Your dental appointment with ${selectedDoctor.name}.\n\nTreatment: ${selectedService.name}\nDuration: ${selectedService.duration_minutes} minutes\nNotes: ${data.notes || "None"}\n\nThank you for choosing Aura Dental Care.`,
+        location: "Aura Dental Care, SG Highway, Ahmedabad, Gujarat, India",
         organizer: {
-          name: "SmileCraft Dental Clinic",
-          email: "appointments@smilecraftclinic.com",
+          name: "Aura Dental Care",
+          email: "appointments@brightsmiledental.com",
         },
       });
 
@@ -167,14 +167,14 @@ export async function bookAppointmentAction(formData: {
       // Email to Patient
       try {
         await resend.emails.send({
-          from: "SmileCraft <no-reply@smilecraftclinic.com>",
+          from: "Aura Dental Care <no-reply@brightsmiledental.com>",
           to: data.patientEmail,
-          subject: "Your Appointment Confirmed - SmileCraft Dental Clinic",
+          subject: "Your Appointment Confirmed - Aura Dental Care",
           html: `
             <div style="font-family: 'Outfit', sans-serif; max-width: 600px; margin: 0 auto; padding: 25px; border: 1px solid #e2e8f0; border-radius: 16px; background-color: #ffffff; color: #1e293b;">
               <!-- Header -->
               <div style="text-align: center; border-bottom: 2px solid #3b82f6; padding-bottom: 20px; margin-bottom: 25px;">
-                <h1 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #1e3a8a; margin: 0; font-size: 26px;">SmileCraft Dental Clinic</h1>
+                <h1 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #1e3a8a; margin: 0; font-size: 26px;">Aura Dental Care</h1>
                 <p style="color: #64748b; font-size: 14px; margin: 5px 0 0 0; font-style: italic;">Gentle Care. Confident Smiles.</p>
               </div>
 
@@ -224,18 +224,18 @@ export async function bookAppointmentAction(formData: {
 
               <!-- Location Banner -->
               <div style="margin-top: 25px; border-top: 1px solid #e2e8f0; padding-top: 20px;">
-                <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #1e3a8a; margin: 0 0 5px 0; font-size: 14px; font-weight: bold;">SmileCraft Clinic Ahmedabad</h4>
+                <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #1e3a8a; margin: 0 0 5px 0; font-size: 14px; font-weight: bold;">Aura Dental Care Ahmedabad</h4>
                 <p style="margin: 0; font-size: 13px; color: #475569; line-height: 1.5;">
-                  4, Ground Floor, Olive Arcade, Off CG Road, Navrangpura, Ahmedabad, Gujarat 380009
+                  402, Harmony Business Hub, Near Satellite Cross Road, SG Highway, Ahmedabad, Gujarat 380015
                 </p>
                 <p style="margin: 5px 0 0 0; font-size: 13px; color: #64748b;">
-                  Need assistance? Call us: <strong>+91 79 4000 5000</strong>
+                  Need assistance? Call us: <strong>+91 98765 12345</strong>
                 </p>
               </div>
 
               <!-- Footer -->
               <div style="border-top: 1px solid #e2e8f0; padding-top: 15px; text-align: center; font-size: 12px; color: #94a3b8; margin-top: 30px;">
-                <p style="margin: 0;">&copy; ${new Date().getFullYear()} SmileCraft Clinic. All rights reserved.</p>
+                <p style="margin: 0;">&copy; ${new Date().getFullYear()} Aura Dental Care. All rights reserved.</p>
               </div>
             </div>
           `,
@@ -246,10 +246,10 @@ export async function bookAppointmentAction(formData: {
       }
 
       // Email to Admin
-      const adminEmail = process.env.CLINIC_ADMIN_EMAIL || "info@smilecraftclinic.com";
+      const adminEmail = process.env.CLINIC_ADMIN_EMAIL || "info@brightsmiledental.com";
       try {
         await resend.emails.send({
-          from: "SmileCraft Portal <no-reply@smilecraftclinic.com>",
+          from: "Aura Dental Care Portal <no-reply@brightsmiledental.com>",
           to: adminEmail,
           subject: `New Appointment Booking: ${data.patientName}`,
           html: `

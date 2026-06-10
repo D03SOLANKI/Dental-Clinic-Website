@@ -48,9 +48,9 @@ export default function Footer() {
             <Link
               href="/"
               className="inline-block font-display text-2xl font-bold tracking-tight text-text-inverse focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-500 rounded-sm"
-              aria-label="SmileCraft Dental Clinic Homepage"
+              aria-label="Aura Dental Care Homepage"
             >
-              Smile<span className="text-primary-500">Craft</span>
+              Aura<span className="text-primary-500"> Dental Care</span>
             </Link>
             <p className="font-body text-sm text-text-muted leading-relaxed">
               Gentle Care. Confident Smiles. Experience premium digital dentistry using state-of-the-art dental technology in Ahmedabad.
@@ -58,38 +58,38 @@ export default function Footer() {
             {/* Social Links */}
             <div className="flex items-center gap-md mt-xs">
               <a
-                href="https://instagram.com/smilecraftdental"
+                href="https://instagram.com/brightsmiledental"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text-muted hover:text-primary-500 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-500 rounded-md p-1"
-                aria-label="Follow SmileCraft on Instagram"
+                aria-label="Follow Aura Dental Care on Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://facebook.com/smilecraftdental"
+                href="https://facebook.com/brightsmiledental"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text-muted hover:text-primary-500 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-500 rounded-md p-1"
-                aria-label="Follow SmileCraft on Facebook"
+                aria-label="Follow Aura Dental Care on Facebook"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://youtube.com/@smilecraftdental"
+                href="https://youtube.com/@brightsmiledental"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text-muted hover:text-primary-500 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-500 rounded-md p-1"
-                aria-label="Subscribe to SmileCraft on YouTube"
+                aria-label="Subscribe to Aura Dental Care on YouTube"
               >
                 <Youtube className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com/company/smilecraftdental"
+                href="https://linkedin.com/company/brightsmiledental"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-text-muted hover:text-primary-500 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-500 rounded-md p-1"
-                aria-label="Connect with SmileCraft on LinkedIn"
+                aria-label="Connect with Aura Dental Care on LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
@@ -150,30 +150,30 @@ export default function Footer() {
               <li className="flex items-start gap-xs">
                 <MapPin className="h-5 w-5 text-primary-500 shrink-0 mt-0.5" />
                 <a
-                  href="https://maps.google.com/?q=Ahmedabad+Dental+Clinic"
+                  href="https://maps.google.com/?q=Aura+Dental+Care+Ahmedabad"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-text-inverse transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-500 rounded-sm"
                 >
-                  402, Shivalik Square, Near Iskcon Cross Road, SG Highway, Ahmedabad, Gujarat 380015
+                  402, Harmony Business Hub, Near Satellite Cross Road, SG Highway, Ahmedabad, Gujarat 380015
                 </a>
               </li>
               <li className="flex items-center gap-xs">
                 <Phone className="h-5 w-5 text-primary-500 shrink-0" />
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919876512345"
                   className="hover:text-text-inverse transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-500 rounded-sm"
                 >
-                  +91 98765 43210
+                  +91 98765 12345
                 </a>
               </li>
               <li className="flex items-center gap-xs">
                 <Mail className="h-5 w-5 text-primary-500 shrink-0" />
                 <a
-                  href="mailto:contact@smilecraftdental.com"
+                  href="mailto:info@brightsmiledental.com"
                   className="hover:text-text-inverse transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-500 rounded-sm"
                 >
-                  contact@smilecraftdental.com
+                  info@brightsmiledental.com
                 </a>
               </li>
               <li className="flex items-start gap-xs">
@@ -229,7 +229,7 @@ export default function Footer() {
 
         {/* Bottom Banner */}
         <div className="mt-2xl pt-lg border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-md text-xs text-text-muted font-body">
-          <p>© {new Date().getFullYear()} SmileCraft Dental Clinic. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Aura Dental Care. All rights reserved.</p>
           <div className="flex items-center gap-md">
             <Link
               href="/privacy-policy"

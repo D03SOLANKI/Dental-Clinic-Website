@@ -240,7 +240,7 @@ export const faqs: FAQItem[] = [
   {
     id: "f1",
     question: "How often should I visit the dentist?",
-    answer: "We recommend visiting SmileCraft every six months for a routine cleaning and comprehensive checkup to prevent oral health issues.",
+    answer: "We recommend visiting Aura Dental Care every six months for a routine cleaning and comprehensive checkup to prevent oral health issues.",
     category: "General",
   },
   {
@@ -281,7 +281,7 @@ export const faqs: FAQItem[] = [
   },
   {
     id: "f8",
-    question: "What is the cost of teeth whitening at SmileCraft?",
+    question: "What is the cost of teeth whitening at Aura Dental Care?",
     answer: "Teeth whitening costs vary based on in-office vs. take-home treatments. Contact us for a personalized pricing details.",
     category: "Cosmetic",
   },

@@ -15,7 +15,7 @@ export default function HomePage() {
     {
       value: "12,000+",
       label: "Happy Smiles Designed",
-      description: "Patients treated in Navrangpura, Ahmedabad",
+      description: "Patients treated on SG Highway, Ahmedabad",
       icon: Smile,
     },
     {
@@ -120,7 +120,7 @@ export default function HomePage() {
               Where Technology Meets Gentle Care
             </h2>
             <p className="font-body text-sm sm:text-base text-text-secondary mt-md leading-relaxed">
-              At SmileCraft, we refuse to practice outdated dental workflows. We understand that visiting a dentist can be anxiety-inducing, which is why we’ve completely redesigned the patient experience around luxury comfort and pain-free solutions.
+              At Aura Dental Care, we refuse to practice outdated dental workflows. We understand that visiting a dentist can be anxiety-inducing, which is why we’ve completely redesigned the patient experience around luxury comfort and pain-free solutions.
             </p>
 
             {/* Bullets */}
@@ -159,12 +159,12 @@ export default function HomePage() {
           {/* Right visual showcase */}
           <div className="bg-surface border border-surface-muted rounded-2xl p-xl shadow-card-md flex flex-col gap-lg max-w-lg lg:max-w-none mx-auto lg:mr-0 w-full">
             <h3 className="font-display text-xl font-bold text-text-primary border-b border-surface-muted pb-md">
-              SmileCraft Ahmedabad Facility
+              Aura Dental Care Facility
             </h3>
             <div className="space-y-md font-body text-sm text-text-secondary">
               <div className="flex justify-between gap-md items-start">
                 <span className="shrink-0">Address</span>
-                <span className="font-semibold text-text-primary text-right">Navrangpura, Ahmedabad</span>
+                <span className="font-semibold text-text-primary text-right">SG Highway, Ahmedabad</span>
               </div>
               <div className="flex justify-between gap-md items-start">
                 <span className="shrink-0">Operating Hours</span>
@@ -176,7 +176,7 @@ export default function HomePage() {
               </div>
               <div className="flex justify-between gap-md items-start">
                 <span className="shrink-0">Contact Desk</span>
-                <span className="font-semibold text-text-primary text-right">+91 98765 43210</span>
+                <span className="font-semibold text-text-primary text-right">+91 98765 12345</span>
               </div>
             </div>
             <Link
@@ -228,7 +228,7 @@ export default function HomePage() {
 
         <div className="mx-auto max-w-3xl relative z-10 flex flex-col items-center gap-md">
           <h2 className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight">
-            Ready to Experience SmileCraft's Luxury Care?
+            Ready to Experience Aura Dental Care's Luxury Care?
           </h2>
           <p className="font-body text-base text-primary-100 max-w-xl">
             Book your convenient slot online today. Enjoy gentle checkups, expert cosmetic dental cleanings, and modern pain-free treatments right in Ahmedabad.
@@ -241,7 +241,7 @@ export default function HomePage() {
               Book Your Appointment Now
             </Link>
             <a
-              href="tel:+919876543210"
+              href="tel:+919876512345"
               className="border border-primary-300 hover:bg-primary-600 font-body text-base font-bold px-xl py-md rounded-md transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-300"
             >
               Call Clinic Desk

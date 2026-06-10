@@ -164,7 +164,7 @@ export default function Navbar() {
                   className="flex items-center gap-xs"
                 >
                   <span className="font-display text-2xl font-bold tracking-tight text-text-primary">
-                    Smile<span className="text-primary-500">Craft</span>
+                    Aura<span className="text-primary-500"> Dental Care</span>
                   </span>
                 </Link>
                 <button
@@ -212,8 +212,8 @@ export default function Navbar() {
                 </div>
                 <div className="flex items-center gap-sm">
                   <Phone className="h-4 w-4 text-primary-500" />
-                  <a href="tel:+919876543210" className="hover:text-primary-600 transition-colors">
-                    +91 98765 43210
+                  <a href="tel:+919876512345" className="hover:text-primary-600 transition-colors">
+                    +91 98765 12345
                   </a>
                 </div>
               </div>
@@ -253,10 +253,10 @@ export default function Navbar() {
           <Link
             href="/"
             className="flex items-center gap-xs focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-500 rounded-sm"
-            aria-label="SmileCraft Dental Clinic Homepage"
+            aria-label="Aura Dental Care Homepage"
           >
             <span className="font-display text-2xl font-bold tracking-tight text-text-primary">
-              Smile<span className="text-primary-500">Craft</span>
+              Aura<span className="text-primary-500"> Dental Care</span>
             </span>
           </Link>
 
@@ -288,12 +288,12 @@ export default function Navbar() {
           {/* Desktop Call-to-actions */}
           <div className="hidden lg:flex items-center gap-md">
             <a
-              href="tel:+919876543210"
+              href="tel:+919876512345"
               className="flex items-center gap-xs font-body text-sm font-semibold text-text-secondary hover:text-primary-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-500 rounded-sm py-1 px-xs"
-              aria-label="Call SmileCraft Dental Clinic at +91 98765 43210"
+              aria-label="Call Aura Dental Care at +91 98765 12345"
             >
               <Phone className="h-4 w-4 text-primary-500" />
-              +91 98765 43210
+              +91 98765 12345
             </a>
             <Link
               href="/book"

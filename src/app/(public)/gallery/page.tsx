@@ -18,7 +18,7 @@ const galleryItems: GalleryItem[] = [
   {
     id: 1,
     src: "/images/gallery_reception.png",
-    alt: "SmileCraft Boutique Reception and Waiting Lounge",
+    alt: "Aura Dental Care Boutique Reception and Waiting Lounge",
     category: "Clinic & Lounge",
     caption: "Premium Reception & Lounge",
     description: "Designed like a luxury hospitality space to reduce dental anxiety, featuring warm lighting and aromatherapy.",
@@ -26,7 +26,7 @@ const galleryItems: GalleryItem[] = [
   {
     id: 2,
     src: "/images/gallery_treatment.png",
-    alt: "State-of-the-art Treatment Operatory at SmileCraft",
+    alt: "State-of-the-art Treatment Operatory at Aura Dental Care",
     category: "Operatories & Tech",
     caption: "Advanced Treatment Suite",
     description: "Fully digital operatory with orthopedic chair, high-res dental monitors, and intraoral cameras.",
@@ -86,7 +86,7 @@ export default function GalleryPage() {
           Explore Our State-of-the-Art Clinic
         </h1>
         <p className="font-body text-sm sm:text-base text-text-secondary mt-sm max-w-xl mx-auto leading-relaxed">
-          Take a virtual walk through our modern boutique dental studio in Navrangpura, Ahmedabad. Discover our premium facilities and clean sterilization areas.
+          Take a virtual walk through our modern boutique dental studio on SG Highway, Ahmedabad. Discover our premium facilities and clean sterilization areas.
         </p>
       </section>
 
@@ -217,7 +217,7 @@ export default function GalleryPage() {
 
                 <div className="pt-md border-t border-surface-muted mt-lg flex items-center gap-xs text-xs text-text-muted font-body">
                   <ShieldCheck className="h-4 w-4 text-accent-mint" />
-                  <span>Verified SmileCraft Facility Photo</span>
+                  <span>Verified Aura Dental Care Facility Photo</span>
                 </div>
               </div>
             </motion.div>

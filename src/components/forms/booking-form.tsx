@@ -34,7 +34,7 @@ const bookingSchema = z.object({
   patientPhone: z
     .string()
     .min(1, "Phone number is required")
-    .refine((val) => /^\+?[0-9\s-]{10,15}$/.test(val), "Please enter a valid phone number (e.g. +91 98765 43210)"),
+    .refine((val) => /^\+?[0-9\s-]{10,15}$/.test(val), "Please enter a valid phone number (e.g. +91 98765 12345)"),
   notes: z.string().optional(),
 });
 
@@ -384,7 +384,7 @@ export default function BookingForm() {
                     <input
                       type="text"
                       id="patientPhone"
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 98765 12345"
                       {...register("patientPhone")}
                       className="w-full bg-surface border border-surface-muted rounded-md py-md pl-xl pr-md text-sm text-text-primary focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500"
                     />

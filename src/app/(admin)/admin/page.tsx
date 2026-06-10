@@ -6,7 +6,7 @@ import AdminDashboardClient from "./admin-client";
 export const revalidate = 0;
 
 export const metadata = {
-  title: "SmileCraft Admin Portal",
+  title: "Aura Dental Admin Portal",
   description: "Administrative console to manage dental appointments, newsletter subscriptions, and patient messages.",
 };
 
